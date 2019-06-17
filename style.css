@@ -1,0 +1,270 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0079C0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+.navbar {
+    height: 32px;
+    position: relative;
+    overflow: hidden;
+    padding: 4px;
+    background-color: #0068A6;
+}
+
+.nav-text {
+    position: absolute;
+    margin: 0;
+    font-size: 1.5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(238, 238, 238, 0.7);
+}
+
+.board-header {
+    flex: none;
+    height: auto;
+    padding: 8px 4px 8px 8px;
+    position: relative;
+}
+
+.board-title {
+    cursor: default;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    padding-left: 8px;
+    padding-right: 12px;
+    color: #fff;
+}
+
+.board {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.board>* {
+    flex: 0 0 auto;
+}
+
+
+.list {
+    width: 272px;
+    margin: 0 4px;
+    height: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    background-color: #dfe1e6;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    position: relative;
+    white-space: normal;
+}
+
+.list:first-child {
+    margin-left: 8px;
+}
+
+/* .list-content {
+    background-color: #dfe1e6;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    position: relative;
+    white-space: normal;
+} */
+
+.list .header {
+    position: relative;
+    padding-right: 36px;
+    float: left;
+    color: #172b4d;
+    flex: 0 0 auto;
+    padding: 10px 8px 8px;
+    position: relative;
+    min-height: 20px;
+}
+
+.list .header-title {
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: none;
+    margin: -4px 0;
+    height: 28px;
+    min-height: 20px;
+    padding: 4px 8px;
+    resize: none;
+    max-height: 256px;
+    border: none;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 14px;
+    overflow: none;
+}
+
+.list .list-extras {
+    text-decoration: none;
+    color: #6b778c;
+    padding: 0 6px 6px 6px;
+    border-radius: 3px;
+    font-weight: 700;
+    position: absolute;
+    right: 10px;
+    top: 6px;
+}
+
+.list .list-extras:hover,
+.add-list-card:hover {
+    color: #172b4d;
+    background-color: rgba(9, 30, 66, .13);
+}
+
+.list .list-extras:active,
+.add-list-card:active {
+    color: #6b778c;
+    background-color: rgba(9, 30, 66, .25);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 4px;
+}
+
+.list-item {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0 4px;
+    overflow: hidden;
+    padding: 6px 8px 2px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(9, 30, 66, .25);
+    cursor: pointer;
+    display: block;
+    margin-bottom: 8px;
+    max-width: 300px;
+    min-height: 20px;
+    text-decoration: none;
+
+}
+
+
+
+.add-list-card {
+    border-radius: 0 0 3px 3px;
+    color: #6b778c;
+    display: block;
+    flex: 0 0 auto;
+    padding: 8px;
+    position: relative;
+    text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.list-item.is-moving,
+.list.is-moving {
+    transform: rotate(4deg);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.gu-mirror {
+    position: fixed !important;
+    margin: 0 !important;
+    z-index: 9999 !important;
+}
+
+.gu-hide {
+    display: none !important;
+}
+
+.gu-unselectable {
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+
+
+.gu-transit {
+    background-color: #b3bac5;
+    color: #b3bac5;
+    position: initial;
+    transform: none;
+    opacity: 0.2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+}

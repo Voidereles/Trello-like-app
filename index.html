@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task organiser | Maciej Żelazo</title>
+    <meta name="description" content="recruitment task - a trello style application">
+    <meta name="dcterms.description" lang="pl" content="recruitment task - a trello style application">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="trello work organisation task">
+    <meta name="dcterms.subject" lang="pl" content="trello; work; organisation; task">
+    <meta name="application-name" content="Task organiser">
+
+    <link rel="author" href="Maciej Żelazo">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
+    <script src="script.js" async defer></script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <main>
+        <div class="navbar">
+            <h1 class="nav-text">Aplikacja à la Trello</h1>
+        </div>
+
+        <div class="board-header">
+            <span class="board-title">Witaj w Trello</span>
+        </div>
+
+        <div id="board" class="board">
+            <div class="list">
+
+                <header class="header">
+                    <textarea class="header-title" onfocus="set_BG_Color(this)"
+                        onBlur="del_BG_Color(this)">Oczekuje</textarea>
+                    <button class="list-extras">&#x2026</button>
+                </header>
+                <ul id="1" class="list-cards">
+                    <li class="list-item">Lorem ipsum dolor sit amet</li>
+                    <li class="list-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis
+                        enim sit amet</li>
+                    <li class="list-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis
+                        enim sit amet</li>
+                </ul>
+                <footer class="add-list-card"><button>&#43 Dodaj kolejną kartę</button></footer>
+            </div>
+
+            <div class="list">
+                <header class="header">
+                    <textarea class="header-title" onfocus="set_BG_Color(this)"
+                        onBlur="del_BG_Color(this)">W toku</textarea>
+                    <button class="list-extras">&#x2026</button>
+                </header>
+                <ul id="2" class="list-cards">
+                    <li class="list-item">Lorem ipsum dolor sit amet</li>
+                    <li class="list-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                    <li class="list-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis
+                        enim sit amet</li>
+                </ul>
+                <footer class="add-list-card"><button>&#43 Dodaj kolejną kartę</button></footer>
+            </div>
+
+            <div class="list">
+                <header class="header">
+                    <textarea class="header-title" onfocus="set_BG_Color(this)"
+                        onBlur="del_BG_Color(this)">Ukończone</textarea>
+                    <button class="list-extras">&#x2026</button>
+                </header>
+                <ul id="3" class="list-cards">
+                    <li class="list-item">Lorem ipsum dolor sit amet</li>
+                    <li class="list-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                    <li class="list-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis
+                        enim sit amet</li>
+                </ul>
+                <footer class="add-list-card"><button>&#43 Dodaj kolejną kartę</button></footer>
+            </div>
+        </div>
+    </main>
+    <script src="" async defer>
+    </script>
+</body>
+
+</html>
